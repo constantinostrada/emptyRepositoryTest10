@@ -1,0 +1,36 @@
+{
+  "name": "emptyRepositoryTest10",
+  "version": "1.0.0",
+  "description": "A modern HTML5, CSS3, and JavaScript web application",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -o",
+    "dev": "npx live-server --port=8080 --open=/",
+    "lint": "npx eslint src/js/**/*.js",
+    "lint:fix": "npx eslint src/js/**/*.js --fix",
+    "format": "npx prettier --write \"src/**/*.{js,css,html}\"",
+    "format:check": "npx prettier --check \"src/**/*.{js,css,html}\"",
+    "build": "npm run lint && npm run format:check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "javascript",
+    "web",
+    "frontend"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "http-server": "^14.0.0",
+    "live-server": "^1.2.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
