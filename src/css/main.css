@@ -7,7 +7,8 @@
   --color-secondary: #10b981;
   --color-secondary-dark: #059669;
   --color-accent: #f59e0b;
-  
+  --color-violet: #8b5cf6;
+
   /* Neutral Colors */
   --color-white: #ffffff;
   --color-black: #000000;
@@ -21,11 +22,13 @@
   --color-gray-700: #374151;
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
-  
+
   /* Typography */
-  --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-family-mono: 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', Consolas, 'Courier New', monospace;
-  
+  --font-family-primary:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-mono:
+    "SF Mono", Monaco, Inconsolata, "Roboto Mono", Consolas, "Courier New", monospace;
+
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -35,16 +38,16 @@
   --font-size-3xl: 1.875rem;
   --font-size-4xl: 2.25rem;
   --font-size-5xl: 3rem;
-  
+
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  
+
   --line-height-tight: 1.25;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.625;
-  
+
   /* Spacing */
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -58,7 +61,7 @@
   --spacing-16: 4rem;
   --spacing-20: 5rem;
   --spacing-24: 6rem;
-  
+
   /* Border Radius */
   --radius-sm: 0.25rem;
   --radius-base: 0.375rem;
@@ -66,19 +69,19 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
   --radius-full: 9999px;
-  
+
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  
+
   /* Transitions */
   --transition-fast: 0.15s ease-in-out;
   --transition-base: 0.3s ease-in-out;
   --transition-slow: 0.5s ease-in-out;
-  
+
   /* Container */
   --container-max-width: 1200px;
   --container-padding: var(--spacing-4);
@@ -110,18 +113,35 @@ body {
 }
 
 /* ===== TYPOGRAPHY ===== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   margin-bottom: var(--spacing-4);
 }
 
-h1 { font-size: var(--font-size-4xl); }
-h2 { font-size: var(--font-size-3xl); }
-h3 { font-size: var(--font-size-2xl); }
-h4 { font-size: var(--font-size-xl); }
-h5 { font-size: var(--font-size-lg); }
-h6 { font-size: var(--font-size-base); }
+h1 {
+  font-size: var(--font-size-4xl);
+}
+h2 {
+  font-size: var(--font-size-3xl);
+}
+h3 {
+  font-size: var(--font-size-2xl);
+}
+h4 {
+  font-size: var(--font-size-xl);
+}
+h5 {
+  font-size: var(--font-size-lg);
+}
+h6 {
+  font-size: var(--font-size-base);
+}
 
 p {
   margin-bottom: var(--spacing-4);
@@ -273,7 +293,7 @@ a:focus {
   :root {
     --container-padding: var(--spacing-4);
   }
-  
+
   .nav__menu {
     display: none;
     position: absolute;
@@ -285,32 +305,32 @@ a:focus {
     padding: var(--spacing-4);
     box-shadow: var(--shadow-md);
   }
-  
+
   .nav__menu--open {
     display: flex;
   }
-  
+
   .nav__toggle {
     display: flex;
   }
-  
+
   .hero__title {
     font-size: var(--font-size-4xl);
   }
-  
+
   .hero__subtitle {
     font-size: var(--font-size-lg);
   }
-  
+
   .hero__actions {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .section {
     padding: var(--spacing-16) 0;
   }
-  
+
   .section--hero {
     padding: var(--spacing-20) 0;
   }
@@ -320,8 +340,17 @@ a:focus {
   .hero__title {
     font-size: var(--font-size-3xl);
   }
-  
+
   .grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ===== HELLO WORLD ===== */
+.hello-world {
+  color: var(--color-violet);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin: var(--spacing-8) 0;
 }
